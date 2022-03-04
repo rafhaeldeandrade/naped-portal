@@ -1,0 +1,25 @@
+.titleWrapper {
+  padding: 0 16px;
+  width: 495px;
+  margin-bottom: 80px;
+}
+
+.titleBox {
+  width: 310px;
+}
+
+.titleBox h1 {
+  font-family: var(--title-font);
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 60px;
+  color: var(--title-text-color);
+}
+
+.titleWrapper h2 {
+  font-family: var(--text-font);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 32px;
+  color: var(--secondary-text-color);
+}

@@ -4,7 +4,7 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  margin-bottom: 38px;
+  margin-bottom: 42px;
   /* background-color: yellow; */
 }
 
@@ -24,7 +24,7 @@ header > a {
 
 nav > ul > li {
   display: inline-block;
-  margin: 0 30px;
+  margin: 0 18px;
 }
 
 li > a {
