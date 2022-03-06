@@ -14,3 +14,4 @@ Projeto frontend simulando um portal de notícias fictício utilizando `React`.
   4. 1025px — 1200px: Desktops, large screens.
 - Página de cadastro/login;
 - Adicionar a possiblidade de comentar nos posts assim que logado;
+- Utilizar `styled-components`.
