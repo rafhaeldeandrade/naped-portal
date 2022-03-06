@@ -25,22 +25,22 @@ export default function Header({ active }) {
               </a>
             </li>
             <li>
-              <a className={`${styles.underline} series`} href="/">
+              <a className={`${styles.underline} series`} href="/series">
                 Séries
               </a>
             </li>
             <li>
-              <a className={`${styles.underline} filmes`} href="/">
+              <a className={`${styles.underline} filmes`} href="/filmes">
                 Filmes
               </a>
             </li>
             <li>
-              <a className={`${styles.underline} animes`} href="/">
+              <a className={`${styles.underline} animes`} href="/animes">
                 Animes
               </a>
             </li>
             <li>
-              <a className={`${styles.underline} games`} href="/">
+              <a className={`${styles.underline} games`} href="/games">
                 Games
               </a>
             </li>
