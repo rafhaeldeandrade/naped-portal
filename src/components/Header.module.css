@@ -48,4 +48,34 @@ button.btnMyAccount {
   height: 30px;
   padding: 4px 16px;
   margin-left: 60px;
+  transition: transform .4s;
+}
+
+button.btnMyAccount:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* link hover by https://codepen.io/gabrielcojea/pen/ExPaBzQ */
+.underline{
+  position: relative;
+}
+
+.underline::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-text-color);
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
 }

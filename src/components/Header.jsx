@@ -10,19 +10,19 @@ function Header() {
         <nav>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a className={styles.underline} href="/">Home</a>
             </li>
             <li>
-              <a href="/">Séries</a>
+              <a className={styles.underline} href="/">Séries</a>
             </li>
             <li>
-              <a href="/">Filmes</a>
+              <a className={styles.underline} href="/">Filmes</a>
             </li>
             <li>
-              <a href="/">Animes</a>
+              <a className={styles.underline} href="/">Animes</a>
             </li>
             <li>
-              <a href="/">Games</a>
+              <a className={styles.underline} href="/">Games</a>
             </li>
           </ul>
         </nav>
