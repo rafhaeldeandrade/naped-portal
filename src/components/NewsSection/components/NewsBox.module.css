@@ -1,0 +1,33 @@
+.primaryNewsWrapper {
+  display: flex;
+}
+
+.mainNews {
+  width: 760px;
+  background-color: yellow;
+}
+
+.secondaryNewsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondaryNews {
+  width: 338px;
+  height: 165px;
+}
+
+.newsBoxSm {
+  width: 250px;
+  height: 150px;
+}
+
+.newsBoxMd {
+  width: 340px;
+  height: 250px;
+}
+
+.newsBoxLg {
+  width: 760px;
+  height: 350px;
+}

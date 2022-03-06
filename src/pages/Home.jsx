@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
+import NewsSection from '../components/NewsSection/NewsSection';
 import PortalTitle from '../components/PortalTitle';
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <Header />
       <PortalTitle />
+      <NewsSection />
     </>
   );
 }
