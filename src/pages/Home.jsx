@@ -7,7 +7,7 @@ import PortalTitle from '../components/PortalTitle';
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header active="home" />
       <PortalTitle />
       <NewsSection />
       <Footer />
