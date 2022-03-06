@@ -26,6 +26,27 @@ export default function NewsSection() {
           <LatestNewsBox />
           <LatestNewsBox />
         </div>
+        <div className={styles.sideBarNewsWrapper}>
+          <span>Lorem ipsum dolor</span>
+          <div className={styles.separator} />
+          <div className={styles.sideBarNews}>
+            <NewsBox size="md" />
+            <NewsBox size="md" />
+            <NewsBox size="md" />
+          </div>
+        </div>
+      </div>
+      <div className={styles.bottomNewsWrapper}>
+        <span>Notícias mais recentes</span>
+        <div className={styles.separator} />
+        <div className={styles.bottomNews}>
+          <NewsBox size="md" />
+          <NewsBox size="md" />
+          <NewsBox size="md" />
+          <NewsBox size="md" />
+          <NewsBox size="md" />
+          <NewsBox size="md" />
+        </div>
       </div>
     </>
   );

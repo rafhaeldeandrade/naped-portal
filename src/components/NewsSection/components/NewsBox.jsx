@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './NewsBox.module.css';
 
-// { img, title, category, id, size }
 export default function NewsBox({ img, title, category, id, size }) {
   const classNameBasedOnSize = {
     sm: styles.newsBoxSm,
     md: styles.newsBoxMd,
     lg: styles.newsBoxLg,
   };
+  
   return (
     <div
       className={

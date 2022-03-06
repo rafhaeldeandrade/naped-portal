@@ -1,0 +1,25 @@
+.footer {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer h3 {
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 30px;
+  color: var(--primary-text-color);
+}
+
+.footer p {
+  font-family: var(--text-font);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
