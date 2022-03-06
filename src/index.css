@@ -37,3 +37,9 @@ body {
 a {
   text-decoration: none;
 }
+
+.separator {
+  height: 3px;
+  width: 250px;
+  background-color: var(--primary-text-color);
+}

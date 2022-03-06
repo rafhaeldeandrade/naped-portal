@@ -47,7 +47,7 @@
   flex-direction: column;
 }
 
-.sideBarNewsWrapper > span, .bottomNewsWrapper > span {
+.sideBarNewsWrapper > span {
   font-family: var(--title-font);
   font-weight: 400;
   font-size: 1.5rem;
@@ -56,26 +56,9 @@
   margin-bottom: 14px;
 }
 
-.separator {
-  height: 3px;
-  width: 250px;
-  background-color: var(--primary-text-color);
-  margin-bottom: 14px;
-}
-
 .sideBarNews {
   display: flex;
   flex-direction: column;
   gap: 47px;
-}
-
-.bottomNewsWrapper {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 95px;
-}
-.bottomNews {
-  display: flex;
-  gap: 52px;
-  flex-wrap: wrap;
+  margin-top: 14px;
 }

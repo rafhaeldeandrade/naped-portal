@@ -1,4 +1,5 @@
 import React from 'react';
+import BottomNews from '../BottomNews';
 import LatestNewsBox from './components/LatestNewsBox';
 import NewsBox from './components/NewsBox';
 import styles from './NewsSection.module.css';
@@ -28,7 +29,7 @@ export default function NewsSection() {
         </div>
         <div className={styles.sideBarNewsWrapper}>
           <span>Lorem ipsum dolor</span>
-          <div className={styles.separator} />
+          <div className="separator" />
           <div className={styles.sideBarNews}>
             <NewsBox size="md" />
             <NewsBox size="md" />
@@ -36,18 +37,7 @@ export default function NewsSection() {
           </div>
         </div>
       </div>
-      <div className={styles.bottomNewsWrapper}>
-        <span>Notícias mais recentes</span>
-        <div className={styles.separator} />
-        <div className={styles.bottomNews}>
-          <NewsBox size="md" />
-          <NewsBox size="md" />
-          <NewsBox size="md" />
-          <NewsBox size="md" />
-          <NewsBox size="md" />
-          <NewsBox size="md" />
-        </div>
-      </div>
+      <BottomNews />
     </>
   );
 }
