@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
+import SearchBar from '../components/SearchBar';
 import styles from './pages.module.css';
 
 export default function Series() {
@@ -10,8 +11,12 @@ export default function Series() {
         <div className={styles.verticalLinearGradient} />
         <img src="https://i.imgur.com/RwE8EoQ.jpeg" alt="banner" />
         <h2>Animes</h2>
-        <span>O Naped pode ser sua fonte de informações sobre o mundo nerd e outros assuntos relacionados.</span>
+        <span>
+          O Naped pode ser sua fonte de informações sobre o mundo nerd e outros
+          assuntos relacionados.
+        </span>
       </div>
+      <SearchBar />
     </>
   );
 }

@@ -1,0 +1,27 @@
+.searchBar {
+  width: 100%;
+}
+
+.searchBar input {
+  margin: 0;
+  border: 0;
+  outline: none;
+  width: calc(100% - 27px);
+  height: 60px;
+  background-color: #282830;
+  padding-left: 25px;
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 25px;
+  color: #989898;
+}
+
+.searchBar input::placeholder {
+  left: 25px;
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 25px;
+  color: #989898;
+}

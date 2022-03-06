@@ -8,7 +8,7 @@ export default function NewsBox({ img, title, category, id, size }) {
     md: styles.newsBoxMd,
     lg: styles.newsBoxLg,
   };
-  
+
   return (
     <div
       className={
@@ -18,7 +18,7 @@ export default function NewsBox({ img, title, category, id, size }) {
       }>
       <div className={styles.linearGradient} />
       <img src={img} alt="post" />
-      <span>{category}</span>
+      {category && <span>{category}</span>}
       <h3>
         <a href={`/posts/${id}`}>{title}</a>
       </h3>
