@@ -15,8 +15,8 @@ export default function NewsBox({ img, title, category, id, size }) {
         classNameBasedOnSize[size]
           ? classNameBasedOnSize[size]
           : styles.newsBoxLg
-      }
-      style={{ backgroundImage: img }}>
+      }>
+      <div className={styles.linearGradient} />
       <img src={img} alt="post" />
       <span>{category}</span>
       <h3>
@@ -31,14 +31,14 @@ NewsBox.propTypes = {
   title: PropTypes.string,
   category: PropTypes.string,
   id: PropTypes.number,
-  size: PropTypes.string,
+  size: PropTypes.oneOf(['sm', 'md', 'lg']),
 };
 
 NewsBox.defaultProps = {
   img: 'https://i.imgur.com/RSHMjsl.jpeg',
-  title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae.',
+  title:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non purus elementum, pharetra turpis sit amet, luctus sapien.',
   category: 'null',
   id: 1,
   size: 'lg',
-
 };
