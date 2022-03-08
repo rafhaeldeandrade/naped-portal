@@ -3,14 +3,6 @@ import { NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
 
 export default function Header() {
-  // function setPageToActive(page) {
-  //   const navComponents = document.querySelectorAll(styles.underline);
-  //   navComponents.forEach((c) => c.classList.remove(styles.active));
-  //   const activeComponent = document.querySelector(`.${page}`);
-  //   activeComponent.classList.add(styles.active);
-  // }
-
-  // useEffect(() => setPageToActive(active), [active]);
   const activeStyle = {
     borderBottom: '1px solid #8257e6',
     color: '#fefbfb',
