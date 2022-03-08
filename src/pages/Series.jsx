@@ -17,6 +17,7 @@ export default function Series() {
         </span>
       </div>
       <SearchBar />
+      {/* <SpecificThemeNews theme="series"/> */}
     </>
   );
 }
