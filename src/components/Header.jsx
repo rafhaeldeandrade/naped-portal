@@ -1,17 +1,20 @@
-import React, { useEffect } from 'react';
-// import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
 
-export default function Header({ active }) {
-  function setPageToActive(page) {
-    const navComponents = document.querySelectorAll(styles.underline);
-    navComponents.forEach((c) => c.classList.remove(styles.active));
-    const activeComponent = document.querySelector(`.${page}`);
-    activeComponent.classList.add(styles.active);
-  }
+export default function Header() {
+  // function setPageToActive(page) {
+  //   const navComponents = document.querySelectorAll(styles.underline);
+  //   navComponents.forEach((c) => c.classList.remove(styles.active));
+  //   const activeComponent = document.querySelector(`.${page}`);
+  //   activeComponent.classList.add(styles.active);
+  // }
 
-  useEffect(() => setPageToActive(active), [active]);
+  // useEffect(() => setPageToActive(active), [active]);
+  const activeStyle = {
+    borderBottom: '1px solid #8257e6',
+    color: '#fefbfb',
+  };
 
   return (
     <header>
@@ -20,29 +23,44 @@ export default function Header({ active }) {
         <nav>
           <ul>
             <li>
-              <a className={`${styles.underline} home`} href="/">
+              <NavLink
+                to="/"
+                className={styles.underline}
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}>
                 Home
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a className={`${styles.underline} series`} href="/series">
-                Séries
-              </a>
+              <NavLink
+                to="/series"
+                className={styles.underline}
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}>
+                Series
+              </NavLink>
             </li>
             <li>
-              <a className={`${styles.underline}  movies`} href="/filmes">
+              <NavLink
+                to="/filmes"
+                className={styles.underline}
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}>
                 Filmes
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a className={`${styles.underline} animes`} href="/animes">
+              <NavLink
+                to="/animes"
+                className={styles.underline}
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}>
                 Animes
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a className={`${styles.underline} games`} href="/games">
+              <NavLink
+                to="/games"
+                className={styles.underline}
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}>
                 Games
-              </a>
+              </NavLink>
             </li>
           </ul>
         </nav>
@@ -52,8 +70,4 @@ export default function Header({ active }) {
       </div>
     </header>
   );
-}
-
-Header.propTypes = {
-  active: PropTypes.oneOf(['home', 'series', 'movies', 'animes', 'games']).isRequired,
 }
