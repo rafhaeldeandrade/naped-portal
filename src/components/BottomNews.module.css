@@ -1,7 +1,6 @@
 .bottomNewsWrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 95px;
 }
 .bottomNews {
   display: flex;

@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import SearchBar from '../components/SearchBar';
 import styles from './pages.module.css';
+import SpecificSubjectNews from '../components/SpecificSubjectNews';
 
 export default function Series() {
   return (
@@ -17,7 +18,10 @@ export default function Series() {
         </span>
       </div>
       <SearchBar />
-      {/* <SpecificThemeNews theme="series"/> */}
+      <div className={styles.specificSubjectNews}>
+        <SpecificSubjectNews subject="series" />
+      </div>
+      {/* <Pagination /> */}
     </>
   );
 }
