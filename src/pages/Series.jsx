@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import SearchBar from '../components/SearchBar';
+import Footer from '../components/Footer';
 import styles from './pages.module.css';
 import SpecificSubjectNews from '../components/SpecificSubjectNews';
 
@@ -22,6 +23,7 @@ export default function Series() {
         <SpecificSubjectNews subject="series" />
       </div>
       {/* <Pagination /> */}
+      <Footer />
     </>
   );
 }
