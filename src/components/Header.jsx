@@ -30,7 +30,7 @@ export default function Header({ active }) {
               </a>
             </li>
             <li>
-              <a className={`${styles.underline} filmes`} href="/filmes">
+              <a className={`${styles.underline}  movies`} href="/filmes">
                 Filmes
               </a>
             </li>
@@ -55,5 +55,5 @@ export default function Header({ active }) {
 }
 
 Header.propTypes = {
-  active: PropTypes.oneOf(['home', 'series', 'filmes', 'animes', 'games']).isRequired,
+  active: PropTypes.oneOf(['home', 'series', 'movies', 'animes', 'games']).isRequired,
 }
